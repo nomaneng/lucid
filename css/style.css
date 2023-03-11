@@ -423,6 +423,15 @@ font-size: 20px;
 
 width: 10px;
 }
+.beautiful-image{
+
+}
+.beautiful:hover .beautiful-image{
+    transform: rotate(4deg);
+}
+.super:hover .super-image{
+    transform: rotate(355deg);
+}
 /* beautiful section end */
 /* super section start */
 .super{
@@ -618,16 +627,13 @@ font-weight: 700;
     padding: 27px 0px;
 }
 .buy-item h6{
-
-text-transform: uppercase;
-
-text-align: center;
-
-padding: 0px 0px 28px;
-
-margin-bottom: 0;
-
-border-bottom: 1px solid #ddd8d8;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0px 0px 28px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #ddd8d8;
 }
 .buy-item p{
 
@@ -653,6 +659,7 @@ color: #0688d3;
     font-size: 13px;
     padding: 12px 38px;
     border: 1px solid #ddd8d8;
+    color: #008ed6;
     font-weight: 700;
     position: relative;
     z-index: 1;
@@ -663,23 +670,25 @@ color: #0688d3;
     background-color: #008ed6;
     left: 0;
     bottom: 0;
-    height: 0%;
+    height: 100%;
     width: 100%;
+    display: none;
     z-index: -1;
-    color: #fffdfd;
     transition: .5s all ease-in-out;
 }
-.buy-item a:hover::before{
-    height: 100%;
-    color: #ddd8d8;
+.buy-item:hover a::before{
+    display: block;
+}
+.buy-item:hover a{
+    color: #ffffff;
+}
+.buy-item:hover h6{
+    color: #008ed6;
 }
 
 .money p{
-
 color: #ababab;
-
 font-size: 16px;
-
 margin: -21px 0px 24px;
 }
 .money{
@@ -698,14 +707,21 @@ margin: -21px 0px 24px;
     background-color: #008ed6;
     left: 0;
     bottom: 0;
-    height: 0%;
+    height: 100%;
     width: 100%;
+    display: none;
     z-index: -1;
     color: #fffdfd;
     transition: .5s all ease-in-out;
 }
 .buy-item:hover .money::after{
-    height: 100%;
+    display: block;
+}
+.buy-item:hover .money ul li{
+    color: rgb(255, 255, 255);
+}
+.buy-item:hover .money p{
+    color: rgb(255, 255, 255);
 }
 
 .money ul{
@@ -730,6 +746,10 @@ font-size: 22px;
 }
 /* buy section end */
 /* contact section start */
+.contact{
+    position: relative;
+    background-color: #ededed;
+}
 .contact-top{
 
     text-align: center;
@@ -759,4 +779,97 @@ font-weight: 700;
     margin: auto;
     margin-top: 25px;
     display: block;
+}
+.contact-item{
+
+text-align: center;
+
+margin-top: 57px;
+
+width: 52%;
+}
+.contact-item i{
+
+font-size: 25px;
+
+color: #457bbd;
+}
+.contact-item p{
+    
+line-height: x;
+    
+margin-top: 18px;
+}
+.mape img{
+    padding: 0;
+    height: 235px;
+}
+.contact-padd{
+    
+padding: 0px 0px 252px;
+}
+.contact-form{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 1%);
+    background-color: black;
+    display: inline-block;
+    padding: 45px;
+}
+.left-side{
+
+}
+.form-item{
+
+display: block;
+
+width: 300px;
+
+background-color: transparent;
+
+border: 1px solid #646161;
+
+margin: 0px 39px 23px 0px;
+
+height: 50px;
+
+border-radius: 3px;
+}
+
+.right-side .message{
+    
+width: 300px;
+    
+background-color: transparent;
+    
+border-radius: 3px;
+    
+border: 1px solid #646161;
+    
+height: 199px;
+
+}
+.footer{
+    
+background-color: #101010;
+}
+.footer-item{
+
+display: inline-block;
+
+text-align: center;
+
+margin: 19px 0px;
+}
+.footer-icon{
+    list-style-type: none;
+}
+.footer-icon li a{
+    text-decoration: none;
+}
+.footer-icon li{
+    display: inline-block;
+    padding: 13px;
+    font-size: 27px;
 }
